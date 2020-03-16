@@ -3,7 +3,17 @@
   <body>
     <video><source src="jim.webm" type="video/webm" /></video>
     <div>
-      <div style="background-color: red; height: 2000px;"></div>
+      <div style="height: 2000px;">
+        <p>To reproduce:</p>
+        <ol>
+          <li>scroll this page until the video/image of my face is partially out of view</li>
+          <li>refresh the page</li>
+        </ol>
+        <p>Expected behavior: scroll offset is same as before refreshing</p>
+        <p>Actual behavior: scrolled to the bottom of the page</p>
+        <p>Reproduced on Chrome 80.0.3987.122</p>
+        <p>Not reproduced on Firefox</p>
+      </div>
       <div>text</div>
     </div>
   </body>
